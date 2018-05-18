@@ -1,0 +1,99 @@
+\documentclass[11pt,legalpaper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}[2011/08/13]
+\usepackage{float}
+%\usepackage[pdftex]{hyperref}
+\usepackage{epstopdf}
+\usepackage{etoolbox}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{setspace}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage{xcolor} 
+
+\usepackage[scale=0.80]{geometry}
+
+\firstname{Daniel}
+\familyname{Dello Russo Oliveira}
+\title{Curriculum Vitae}
+\address{Rua Doutor Olímpio da Silva Miranda, 380}{Campinas, SP. CEP: 13083-010}
+
+
+\mobile{(+55) 19 99702 3305}
+\email{danieldroliveira@gmail.com}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\renewcommand*{\namefont}{\fontsize{30}{32}\mdseries\upshape}
+\renewcommand*{\titlefont}{\fontsize{20}{22}\mdseries\itshape}
+
+\makecvtitle
+
+
+\section{Dados Pessoais}
+
+\cvitem{Nascimento}{\emph{28 de Setembro, 1991}}
+\cvitem{Endereço}{Rua Dr. Olímpio da Silva Miranda, 380 - Campinas, SP - CEP: 13083-010}
+\cvitem{Celular}{(+55) 11 99702 3305}
+\cvitem{Email}{danieldroliveira@gmail.com}
+\cvitem{GitHub}{\url{https://github.com/ddello32/}}
+
+\section{Educação}
+
+\cvitem{2010--Hoje}{\textbf{Graduação em Engenharia de Controle e Automação,} \textit{Faculdade de Engenharia Mecânica,} Universidade Estadual de Campinas (Unicamp).}
+
+\cvitem{2012--2014}{\textbf{Duplo diploma: Engenharia Generalista (Diplôme D'Ingénieur - Grade de Master),} École Centrale Paris (ECP).}
+
+\cvitem{2007--2009}{\textbf{Ensino Médio,} \textit{Colégio São Marcos}.}
+
+
+\section{Conquistas e Méritos}
+
+\cvitem{2009}{\textbf{Aluno do Ano,} \textit{Ensino Médio,} Colégio São Marcos.}
+\cvitem{2011-2012}{\textbf{Bolsa SAE de Iniciação Científica,} \textit{Algorítimos de Ordenação e Programação Concorrente,} Unicamp.}
+
+\cvitem{2011}{\textbf{1$^o$ lugar na categoria Aplicações Móveis}, \textit{Maratona de programação Codefest}.}
+\cvitem{}{Projeto: URAN Player}
+
+\cvitem{2012-2014}{\textbf{Bolsa de estudos CAPES/BRAFITEC}}
+
+\cvitem{2014}{\textbf{3$^o$ lugar}, \textit{Projeto Inovação do Ano da École Centrale Paris}.} \cvitem{}{Projeto CHAR: Camera Holonomic Android Robot}
+
+\section{Experiência Profissional}
+
+\cvitem{2017--Hoje}{\textbf{Desenvolvedor Android,} \textit{Daitan Group,} Campinas.}
+\cvitem{2015--2017}{\textbf{Desenvolvedor Android/NodeJs,} \textit{Clube Da Entrega,} Campinas.}
+
+\section{Habilidades e Competências}
+
+\subsection{Linguagens de Programação}
+\cvitem{Básico}{C++, Assembly, Objective-C}
+\cvitem{Intermediário}{\textsc{Python}, \textsc{C}, \textsc{React Native}, \textsc{MongoDB} \LaTeX}
+\cvitem{Avançado}{\textsc{Java}, \textsc{Javascript}, \textsc{NodeJs}}
+
+\subsection{Bibliotecas e Frameworks}
+\renewcommand{\listitemsymbol}{\textcolor{black}{o~}} % Changes the symbol used for lists
+\cvlistitem{Android: AndroidAnnotations, SpringFramework, Jackson, GSON, ORMLite, SQLiteCipher, RXAndroid, GoogleMapsAPI, GoogleAnalytics, okHttp, Apache Http Client, BlackBerry Good SDK, MobileIron App Dynamics SDK, Power Mockito, Robolectric}
+\cvlistitem{NodeJs/ReactNative: \textit{Mongoose, Express Framework, Passport, Async, Jest, Enzyme}}
+
+
+\section{Idiomas}
+
+\cvitemwithcomment{Português}{Língua Nativa}{}
+\cvitemwithcomment{Inglês}{Avançado}{Leitura, escrita e conversação}
+\cvitemwithcomment{Francês}{Avançado}{Leitura e conversação, escrita básica}
+
+
+\end{document}
