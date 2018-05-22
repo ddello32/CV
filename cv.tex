@@ -23,6 +23,10 @@
 
 \usepackage[scale=0.80]{geometry}
 
+\newbool{COMMENTS}
+\booltrue{COMMENTS}
+%\boolfalse{COMMENTS}
+
 \firstname{Daniel}
 \familyname{Dello Russo Oliveira}
 \title{Curriculum Vitae}
@@ -62,19 +66,41 @@
 \section{Conquistas e Méritos}
 
 \cvitem{2009}{\textbf{Aluno do Ano,} \textit{Ensino Médio,} Colégio São Marcos.}
-\cvitem{2011-2012}{\textbf{Bolsa SAE de Iniciação Científica,} \textit{Algorítimos de Ordenação e Programação Concorrente,} Unicamp.}
+\cvitem{2011-2012}{\textbf{Bolsa SAE de Iniciação Científica,} \textit{Algorítimos de Ordenação e Programação Concorrente} Unicamp.}
+\ifbool{COMMENTS}{
+	\cvitem{}{Implementação de um MergeSort altamente paralelizável em C}
+}
 
 \cvitem{2011}{\textbf{1$^o$ lugar na categoria Aplicações Móveis}, \textit{Maratona de programação Codefest}.}
-\cvitem{}{Projeto: URAN Player}
+\cvitem{}{Projeto: URAN Player} 
+\ifbool{COMMENTS}{
+	\cvitem{}{Player de músicas Android que facilita a troca de músicas sem tirar o aparelho do bolso e com shuffle pondereado nos gostos do usuário ou na velocidade em que o mesmo está se locomovendo}
+}
 
 \cvitem{2012-2014}{\textbf{Bolsa de estudos CAPES/BRAFITEC}}
 
-\cvitem{2014}{\textbf{3$^o$ lugar}, \textit{Projeto Inovação do Ano da École Centrale Paris}.} \cvitem{}{Projeto CHAR: Camera Holonomic Android Robot}
+\cvitem{2014}{\textbf{3$^o$ lugar, Projeto Inovação do Ano da École Centrale Paris}.} \cvitem{}{Projeto CHAR: Camera Holonomic Android Robot}
+\ifbool{COMMENTS}{
+	\cvitem{}{Robô omnidirecional com controle em velocidade e posição. Controlado remotamente por aplicativo Android, capaz de evitar obstáculos, enviar feed de audio e vídeo em tempo real para o aplicativo de controle e navegar em mapas pré definidos}
+}
 
 \section{Experiência Profissional}
 
 \cvitem{2017--Hoje}{\textbf{Desenvolvedor Android,} \textit{Daitan Group,} Campinas.}
+
+\ifbool{COMMENTS}{
+	\cvitem{}{Um dos principais desenvolvedores Android em um aplicativo de chat}
+}
+
 \cvitem{2015--2017}{\textbf{Desenvolvedor Android/NodeJs,} \textit{Clube Da Entrega,} Campinas.}
+
+\ifbool{COMMENTS}{
+	\cvitem{}{Desenvolvedor Android e Back End em projeto de aplicativo de compras}
+	\cvitem{}{Arquiteto, Desenvolvedor Android e Líder de equipe em projeto de aplicativo para acompanhamento de entregadores}
+	\cvitem{}{Desenvolvedor Android e BackEnd em projeto de aplicativo para acompanhamento da operação de entregas}
+	\cvitem{}{Desenvolvedor BackEnd em software de logística para entregas espressas}
+	\cvitem{}{Desenvolvedor BackEnd em sites de controle e acompanhamento da operação de entrega}
+}
 
 \section{Habilidades e Competências}
 
