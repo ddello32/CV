@@ -28,7 +28,7 @@
 \newbool{ENGLISH}
 
 \booltrue{COMMENTS}
-\booltrue{ENGLISH}
+% \booltrue{ENGLISH}
 %---------------------------------------
 
 \newcommand{\comment}[1]{\ifbool{COMMENTS}{#1}}
@@ -48,183 +48,193 @@
 %----------------------------------------------------------------------------------------
 
 \begin{document}
-
-\renewcommand*{\namefont}{\fontsize{30}{32}\mdseries\upshape}
-\renewcommand*{\titlefont}{\fontsize{20}{22}\mdseries\itshape}
-
-\makecvtitle
-
-\section{
-	\enpt{Personal Data}{Dados Pessoais}
-}
-
-\cvitem{
-	\enpt{Date of Birth}{Nascimento}
-}{\emph{
-	\enpt{September 28, 1991}{28 de Setembro, 1991}
-}}
-\cvitem{
-	\enpt{Address}{Endereço}
-}{
-	R. José Luís Camargo Moreira, 202, Bl. 1 Ap. 43 (Condomínio Antilhas) - Campinas, SP\en{, Brazil.} - CEP: 13087-511
-}
-\cvitem{
-	\enpt{Phone}{Celular}
-}{
-	(+55) 11 99702 3305
-}
-\cvitem{
-	Email
-}{
-	danieldroliveira@gmail.com
-}
-\cvitem{
-	GitHub
-}{
-	\url{https://github.com/ddello32/}
-}
-
-\section{
-	\enpt{Education}{Educação}
-}
-
-\cvitem{2010--2017}{\textbf{\enpt{Control and Automation Engineer}{Engenheiro de Controle e Automação},} \textit{Faculdade de Engenharia Mecânica,} Universidade Estadual de Campinas (Unicamp).}
-
-\cvitem{2012--2014}{\textbf{\enpt{Double Degree: Generalist Engineer}{Duplo diploma: Engenheiro Generalista} (Diplôme D'Ingénieur - Grade de Master),} École Centrale de Arts et Manufactures Paris (ECP).}
-
-\cvitem{2007--2009}{\textbf{\enpt{High School}{Ensino Médio},} \textit{Colégio São Marcos}.}
-
-
-\section{
-	\enpt{Awards and Achievements}{Conquistas e Méritos}
-}
-
-\cvitem{2009}{\textbf{\enpt{Student of the year}{Aluno do Ano},} \textit{\enpt{High School}{Ensino Médio},} Colégio São Marcos.}
-\cvitem{2011-2012}{\textbf{\enpt{SAE undergraduate research scholarship}{Bolsa SAE de Iniciação Científica},} \textit{\enpt{Sorting Algorithms and Concurrent Programming}{Algorítimos de Ordenação e Programação Concorrente},} Unicamp.}
-\comment{
-	\cvitem{}{
-		\enpt{C implementation of a highly parallel MergeSort algorithm}{Implementação de um MergeSort altamente paralelizável em C}
+	
+	\renewcommand*{\namefont}{\fontsize{30}{32}\mdseries\upshape}
+	\renewcommand*{\titlefont}{\fontsize{20}{22}\mdseries\itshape}
+	
+	\makecvtitle
+	
+	\section{
+		\enpt{Personal Data}{Dados Pessoais}
 	}
-}
-
-\cvitem{2011}{\textbf{\enpt{1$^{st}$ place in Mobile Applications category}{1$^o$ lugar na categoria Aplicações Móveis}}, \textit{\enpt{Codefest Coding Marathon}{Maratona de programação Codefest}}.}
-\cvitem{}{\enpt{Project}{Projeto}: URAN Player} 
-\comment{
-	\cvitem{}{
-		\enpt{Music player for Android that simplifies song switching without removing the device from one's pocket and that shuffles songs accordingly to the user's preferences or to the speed at which he's moving}{Player de músicas Android que facilita a troca de músicas sem tirar o aparelho do bolso e com shuffle pondereado nos gostos do usuário ou na velocidade em que o mesmo está se locomovendo}
+	
+	\cvitem{
+		\enpt{Date of Birth}{Nascimento}
+	}{\emph{
+			\enpt{September 28, 1991}{28 de Setembro, 1991}
+	}}
+	\cvitem{
+		\enpt{Address}{Endereço}
+	}{
+		R. José Luís Camargo Moreira, 202, Bl. 1 Ap. 43 (Condomínio Antilhas) - Campinas, SP\en{, Brazil.} - CEP: 13087-511
 	}
-}
-
-\cvitem{2012-2014}{\textbf{\enpt{CAPES/BRAFITEC scholarship}{Bolsa de estudos CAPES/BRAFITEC}}}
-
-\cvitem{2014}{\textbf{\enpt{3$^{rd}$ place, Innovation Project of the year}{3$^o$ lugar, Projeto Inovação do Ano}, École Centrale Paris}.} \cvitem{}{\enpt{Project}{Projeto} CHAR: Camera Holonomic Android Robot}
-\comment{
-	\cvitem{}{
-		\enpt{Holonomic robot with speed and position control. Operated remotely via Android application and capable of obstacle avoidance, navigation in charted environments and real time audio and video streaming to operating application}{Robô omnidirecional com controle em velocidade e posição. Controlado remotamente por aplicativo Android, capaz de evitar obstáculos, enviar feed de audio e vídeo em tempo real para o aplicativo de controle e navegar em mapas pré definidos}
+	\cvitem{
+		\enpt{Phone}{Celular}
+	}{
+		(+55) 11 99702 3305
 	}
-}
-
-\section{
-	\enpt{Professional Experience}{Experiência Profissional}
-}
-
-\cvitem{2019--\enpt{Today}{Hoje}}{\textbf{\enpt{Android Developer}{Desenvolvedor Android},} \textit{iFood,} Campinas\en{, Brazil}.}
-\comment{\enpt{Related to the acquisition of part of Maplink by iFood}{Movimento devido a aquisição de parte da Maplink pelo iFood}}
-\comment{
-	\cvitem{}{
-		\enpt{Mobile developer at new Business and Innovation logistics team. Working mostly in the native android "iFood para Entregadores" app, but also with other Kotlin Android and Flutter apps for internal use.}
-		{Desenvolvedor mobile na equipe de novos negócios e inovação, dentro do time de logística. Trabalhando principalmente com o app android nativo "iFood para Entregadores", mas também desenvolvendo outros apps Kotlin Android e Flutter para uso interno.}
+	\cvitem{
+		Email
+	}{
+		danieldroliveira@gmail.com
 	}
-}
-}
-
-\cvitem{2018--2019}{\textbf{\enpt{Android/Nodejs Developer}{Desenvolvedor Android/NodeJs},} \textit{Maplink,} Campinas\en{, Brazil}.}
-\comment{
-	\cvitem{}{
-		\enpt{Java and Kotlin Android development and planning for tracking, routing and notification applications for Logistics. Also NodeJs backend development for same applications.}
-	{Desenvolvimento Java e Kotlin Android para app de acompanhamento e execução de rotas no contexto de logística. Desenvolvimento NodeJs para o backend da mesma aplicação.}
+	\cvitem{
+		GitHub
+	}{
+		\url{https://github.com/ddello32/}
 	}
-}
-
-\cvitem{2017--2018}{\textbf{\enpt{Android Developer}{Desenvolvedor Android},} \textit{Daitan Group,} Campinas\en{, Brazil}.}
-
-\comment{
-	\cvitem{}{
-		\enpt{Java Android development for the Symphony Communications Service mobile app. Objective-C code maintenance and React Native feature implementation in the Symphony App as well.}
-		{Desenvolvimento Java Android para o app mobile Symphony Communications Service. Manutenção em código Objective-C e desenvolvimento de features em React Native no mesmo app.}
+	
+	\section{
+		\enpt{Education}{Educação}
 	}
-}
-
-\cvitem{2015--2017}{\textbf{
-	\enpt{Android/NodeJs Developer}{Desenvolvedor Android/NodeJs},
-} \textit{Clube Da Entrega,} Campinas\en{, Brazil}.}
-
-\comment{
-	\cvitem{}{
-		\enpt{Android and BackEnd development for shopping application}{Desenvolvedor Android e Back End em projeto de aplicativo de compras}
+	
+	\cvitem{2010--2017}{\textbf{\enpt{Control and Automation Engineer}{Engenheiro de Controle e Automação},} \textit{Faculdade de Engenharia Mecânica,} Universidade Estadual de Campinas (Unicamp).}
+	
+	\cvitem{2012--2014}{\textbf{\enpt{Double Degree: Generalist Engineer}{Duplo diploma: Engenheiro Generalista} (Diplôme D'Ingénieur - Grade de Master),} École Centrale de Arts et Manufactures Paris (ECP).}
+	
+	\cvitem{2007--2009}{\textbf{\enpt{High School}{Ensino Médio},} \textit{Colégio São Marcos}.}
+	
+	
+	\section{
+		\enpt{Awards and Achievements}{Conquistas e Méritos}
 	}
-	\cvitem{}{
-		\enpt{Android development and team leadership in application for routing, tracking and operating orders assigned to an express delivery courier}{Arquiteto, Desenvolvedor Android e Líder de equipe em projeto de aplicativo para acompanhamento de entregadores}
+	
+	\cvitem{2009}{\textbf{\enpt{Student of the year}{Aluno do Ano},} \textit{\enpt{High School}{Ensino Médio},} Colégio São Marcos.}
+	\cvitem{2011-2012}{\textbf{\enpt{SAE undergraduate research scholarship}{Bolsa SAE de Iniciação Científica},} \textit{\enpt{Sorting Algorithms and Concurrent Programming}{Algorítimos de Ordenação e Programação Concorrente},} Unicamp.}
+	\comment{
+		\cvitem{}{
+			\enpt{C implementation of a highly parallel MergeSort algorithm}{Implementação de um MergeSort altamente paralelizável em C}
+		}
 	}
-	\cvitem{}{
-		\enpt{Android and BackEnd development in application for monitoring an express delivery operation}{Desenvolvedor Android e BackEnd em projeto de aplicativo para acompanhamento da operação de entregas}
+	
+	\cvitem{2011}{\textbf{\enpt{1$^{st}$ place in Mobile Applications category}{1$^o$ lugar na categoria Aplicações Móveis}}, \textit{\enpt{Codefest Coding Marathon}{Maratona de programação Codefest}}.}
+	\cvitem{}{\enpt{Project}{Projeto}: URAN Player} 
+	\comment{
+		\cvitem{}{
+			\enpt{Music player for Android that simplifies song switching without removing the device from one's pocket and that shuffles songs accordingly to the user's preferences or to the speed at which he's moving}{Player de músicas Android que facilita a troca de músicas sem tirar o aparelho do bolso e com shuffle pondereado nos gostos do usuário ou na velocidade em que o mesmo está se locomovendo}
+		}
 	}
-	\cvitem{}{
-		\enpt{BackEnd development in logistics software for express deliveries}{Desenvolvedor BackEnd em software de logística para entregas espressas}
+	
+	\cvitem{2012-2014}{\textbf{\enpt{CAPES/BRAFITEC scholarship}{Bolsa de estudos CAPES/BRAFITEC}}}
+	
+	\cvitem{2014}{\textbf{\enpt{3$^{rd}$ place, Innovation Project of the year}{3$^o$ lugar, Projeto Inovação do Ano}, École Centrale Paris}.} \cvitem{}{\enpt{Project}{Projeto} CHAR: Camera Holonomic Android Robot}
+	\comment{
+		\cvitem{}{
+			\enpt{Holonomic robot with speed and position control. Operated remotely via Android application and capable of obstacle avoidance, navigation in charted environments and real time audio and video streaming to operating application}{Robô omnidirecional com controle em velocidade e posição. Controlado remotamente por aplicativo Android, capaz de evitar obstáculos, enviar feed de audio e vídeo em tempo real para o aplicativo de controle e navegar em mapas pré definidos}
+		}
 	}
-	\cvitem{}{
-		\enpt{BackEnd development in websites for monitoring and controlling an express delivery operation}{Desenvolvedor BackEnd em sites de controle e acompanhamento da operação de entrega}
+	
+	\section{
+		\enpt{Professional Experience}{Experiência Profissional}
 	}
-}
-
-\section{
-	\enpt{Skills and Competencies}{Habilidades e Competências}
-}
-
-\subsection{
-	\enpt{Programming Languages}{Linguagens de Programação}
-}
-\cvitem{
-	\enpt{Basic}{Básico}
-}{C++, Assembly, Objective-C}
-\cvitem{
-	\enpt{Intermediate}{Intermediário}
-}{\textsc{Python}, \textsc{C}, \textsc{React Native} \LaTeX}
-\cvitem{
-	\enpt{Advanced}{Avançado}
-}{\textsc{Java}, \textsc{Javascript}, \textsc{NodeJs}}
-
-\subsection{
-	\enpt{Libraries and Frameworks}{Bibliotecas e Frameworks}
-}
-\renewcommand{\listitemsymbol}{\textcolor{black}{o~}} % Changes the symbol used for lists
-\cvlistitem{Android: AndroidAnnotations, SpringFramework, Jackson, GSON, ORMLite, SQLiteCipher, RXAndroid, GoogleMapsAPI, GoogleAnalytics, okHttp, Apache Http Client, BlackBerry Good SDK, MobileIron App Dynamics SDK, Power Mockito, Robolectric}
-\cvlistitem{NodeJs/ReactNative: \textit{Mongoose, Express Framework, Passport, Async, Jest, Enzyme}}
-
-
-\section{
-	\enpt{Languages}{Idiomas}
-}
-
-\cvitemwithcomment{
-	\enpt{Portuguese}{Português}
-}{
-	\enpt{Native Speaker}{Língua Nativa}
-}{}
-\cvitemwithcomment{
-	\enpt{English}{Inglês}
-}{
-	\enpt{Advanced}{Avançado}
-}{
-	\enpt{Reading, writing and speaking}{Leitura, escrita e conversação}
-}
-\cvitemwithcomment{
-	\enpt{French}{Francês}
-}{
-	\enpt{Advanced}{Avançado}
-}{
-	\enpt{Reading and speaking, basic writing}{Leitura e conversação, escrita básica}
-}
-
-
+	
+	\cvitem{2022--\enpt{Today}{Hoje}}{
+		\textbf{\enpt{Software Engineer}{Engenheiro de Software},} \textit{Food Hub (iFood),} Lisboa\en{, Portugal}.}
+	\comment{
+		\cvitem{}{\textit{\enpt{Transition to Food Hub, iFood branch in Portugal}{Transição para o unidade portuguesa do iFood, Food Hub}}}
+		\cvitem{}{
+			\enpt{Mobile development specialist working mainly with the native android \textit{iFood para Entregadores} app on the app platform team. Main goals: making the development platform scalable and decrease the cognitive load for other developers.}
+			{Especialista em desenvolvimento trabalhando principalmente com o app android nativo "iFood para Entregadores" no time de App Platform. Objetivos Principais: Deixar o aplicativo cada vez mais escalável e diminuir a carga cognitiva no time de desenvolvimento.}
+		}
+	}
+	
+	\cvitem{2019--\enpt{Today}{Hoje}}{
+		\textbf{\enpt{Android Developer}{Desenvolvedor Android},} \textit{iFood,} Campinas\en{, Brazil}.}
+	\comment{
+		\cvitem{}{\textit{\enpt{Related to the acquisition of part of Maplink by iFood}{Movimento devido a aquisição de parte da Maplink pelo iFood}}}
+		\cvitem{}{
+			\enpt{Senior mobile developer at new Business and Innovation logistics team. Working mostly in the native android \textit{iFood para Entregadores} app, but also with other Kotlin Android and Flutter apps for internal use.}
+			{Desenvolvedor mobile na equipe de novos negócios e inovação, dentro do time de logística. Trabalhando principalmente com o app android nativo "iFood para Entregadores", mas também desenvolvendo outros apps Kotlin Android e Flutter para uso interno.}
+		}
+	}
+	
+	\cvitem{2018--2019}{\textbf{\enpt{Android/Nodejs Developer}{Desenvolvedor Android/NodeJs},} \textit{Maplink,} Campinas\en{, Brazil}.}
+	\comment{
+		\cvitem{}{
+			\enpt{Java and Kotlin Android development and planning for tracking, routing and notification applications for Logistics. Also NodeJs backend development for same applications.}
+			{Desenvolvimento Java e Kotlin Android para app de acompanhamento e execução de rotas no contexto de logística. Desenvolvimento NodeJs para o backend da mesma aplicação.}
+		}
+	}
+	
+	\cvitem{2017--2018}{\textbf{\enpt{Android Developer}{Desenvolvedor Android},} \textit{Daitan Group,} Campinas\en{, Brazil}.}
+	
+	\comment{
+		\cvitem{}{
+			\enpt{Java Android development for the Symphony Communications Service mobile app. Objective-C code maintenance and React Native feature implementation in the Symphony App as well.}
+			{Desenvolvimento Java Android para o app mobile Symphony Communications Service. Manutenção em código Objective-C e desenvolvimento de features em React Native no mesmo app.}
+		}
+	}
+	
+	\cvitem{2015--2017}{\textbf{
+			\enpt{Android/NodeJs Developer}{Desenvolvedor Android/NodeJs},
+		} \textit{Clube Da Entrega,} Campinas\en{, Brazil}.}
+	
+	\comment{
+		\cvitem{}{
+			\enpt{Android and BackEnd development for shopping application}{Desenvolvedor Android e Back End em projeto de aplicativo de compras}
+		}
+		\cvitem{}{
+			\enpt{Android development and team leadership in application for routing, tracking and operating orders assigned to an express delivery courier}{Arquiteto, Desenvolvedor Android e Líder de equipe em projeto de aplicativo para acompanhamento de entregadores}
+		}
+		\cvitem{}{
+			\enpt{Android and BackEnd development in application for monitoring an express delivery operation}{Desenvolvedor Android e BackEnd em projeto de aplicativo para acompanhamento da operação de entregas}
+		}
+		\cvitem{}{
+			\enpt{BackEnd development in logistics software for express deliveries}{Desenvolvedor BackEnd em software de logística para entregas espressas}
+		}
+		\cvitem{}{
+			\enpt{BackEnd development in websites for monitoring and controlling an express delivery operation}{Desenvolvedor BackEnd em sites de controle e acompanhamento da operação de entrega}
+		}
+	}
+	
+	\section{
+		\enpt{Skills and Competencies}{Habilidades e Competências}
+	}
+	
+	\subsection{
+		\enpt{Programming Languages}{Linguagens de Programação}
+	}
+	\cvitem{
+		\enpt{Basic}{Básico}
+	}{C++, Assembly, Objective-C}
+	\cvitem{
+		\enpt{Intermediate}{Intermediário}
+	}{\textsc{Python}, \textsc{C}, \textsc{React Native}, \textsc{Flutter}, \LaTeX}
+	\cvitem{
+		\enpt{Advanced}{Avançado}
+	}{\textsc{Kotlin}, \textsc{Java}, \textsc{Javascript}, \textsc{NodeJs}}
+	
+	\subsection{
+		\enpt{Libraries and Frameworks}{Bibliotecas e Frameworks}
+	}
+	\renewcommand{\listitemsymbol}{\textcolor{black}{o~}} % Changes the symbol used for lists
+	\cvlistitem{Android: Retrofit, Room, Android Jetpack, Dagger2,Koin, AndroidAnnotations, SpringFramework, Jackson, GSON, ORMLite, SQLiteCipher, RXAndroid, GoogleMapsAPI, GoogleAnalytics, okHttp, Apache Http Client, BlackBerry Good SDK, MobileIron App Dynamics SDK, Power Mockito, Robolectric}
+	\cvlistitem{NodeJs/ReactNative: \textit{Mongoose, Express Framework, Passport, Async, Jest, Enzyme}}
+	
+	
+	\section{
+		\enpt{Languages}{Idiomas}
+	}
+	
+	\cvitemwithcomment{
+		\enpt{Portuguese}{Português}
+	}{
+		\enpt{Native Speaker}{Língua Nativa}
+	}{}
+	\cvitemwithcomment{
+		\enpt{English}{Inglês}
+	}{
+		\enpt{Advanced}{Avançado}
+	}{
+		\enpt{Reading, writing and speaking}{Leitura, escrita e conversação}
+	}
+	\cvitemwithcomment{
+		\enpt{French}{Francês}
+	}{
+		\enpt{Advanced}{Avançado}
+	}{
+		\enpt{Reading and speaking, basic writing}{Leitura e conversação, escrita básica}
+	}
+	
+	
 \end{document}
